@@ -1,0 +1,14 @@
+.template-basic__wrapper .left__section {
+  max-width: 30%;
+  min-width: 30%; }
+  .template-basic__wrapper .left__section .heading {
+    background-color: #00cdbe; }
+
+.template-basic__wrapper .right__section {
+  max-width: 70%;
+  min-width: 70%; }
+
+.paper__wrapper {
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px 1px #e5e5e5;
+  padding: 10px 20px; }
