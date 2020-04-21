@@ -1,15 +1,113 @@
 .template-basic__wrapper {
-    .left__section {
-        max-width: 30%;
-        min-width: 30%;
+    .paper__wrapper {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 35% 65%;
+        column-gap: 5%;
 
-        .heading {
-            background-color: #00cdbe;
+        .left__section {
+
+            .heading {
+                background-color: #07889b;
+                padding: 20px 0;
+
+                &-name {
+                    &__input {
+                        font-size: 40px;
+                        color: #fff;
+                        text-align: center;
+
+                        &::placeholder {
+                            color: #fff;
+                            opacity: 0.4;
+                        }
+
+                    }
+
+                }
+
+                &-position {
+                    &__input {
+                        color: #fff;
+                        text-align: center;
+                        font-size: 30px;
+                        word-wrap: unset;
+
+                        &::placeholder {
+                            color: #fff;
+                            opacity: 0.4;
+                        }
+
+                    }
+                }
+            }
+
+            &-bottom {
+                width: 80%;
+                margin: 0 auto;
+
+                &>div {
+                    margin-top: 40px;
+                }
+
+                .skills {
+                    position: relative;
+
+                    .skill {
+                        position: relative;
+
+                        span.circle {
+                            border-radius: 100px;
+                            padding: 5px;
+                            background-color: #1d1d1d;
+                            margin: 12px 5px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .right__section {
+            margin-top: 10%;
+
+            &>div {
+                margin-top: 40px;
+            }
+
+            .education {
+                position: relative;
+                font-size: 16px;
+            }
+
+            .awards {
+                position: relative;
+                font-size: 16px;
+
+                &-section {
+                    margin-top: 20px;
+
+                    &:first-child {
+                        margin-top: 10px;
+                    }
+
+                    .awards-company {
+                        font-weight: 700;
+                    }
+
+                    .awards-reason {
+                        font-size: 14px;
+
+                    }
+
+                    .awards-year {
+                        font-size: 14px;
+                    }
+                }
+            }
         }
     }
 
-    .right__section {
-        max-width: 70%;
-        min-width: 70%;
-    }
+
 }
